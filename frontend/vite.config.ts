@@ -10,9 +10,11 @@ import { fileURLToPath } from 'node:url';
 export default defineConfig({
   worker: {
     plugins: () => [comlink()],
+    format: "es"
   },
   optimizeDeps: { exclude: ["pyodide"] },
   resolve: { alias: { "~": resolve(__dirname, "./src") } },
+  build: { target: "esnext" },
   plugins: [comlink(), unocss(), solid(), generouted(),
   {
     name: "vite-plugin-pyodide",

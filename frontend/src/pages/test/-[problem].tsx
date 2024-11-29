@@ -4,13 +4,9 @@ import { Resizable, ResizableHandle, ResizablePanel } from "~/components/ui/resi
 import { Tabs, TabsIndicator, TabsList, TabsTrigger } from "~/components/ui/tabs";
 import { FitAddon } from '@xterm/addon-fit';
 import * as monaco from 'monaco-editor/esm/vs/editor/editor.api';
-import { cn } from "~/utils/cn";
 import { Button } from "~/components/ui/button";
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "~/components/ui/sheet";
 import { Terminal } from "@xterm/xterm";
-import * as Comlink from "comlink"
 import { debounce, delay } from "es-toolkit";
-import c from "ansi-colors"
 import d from 'ts-dedent';
 
 
@@ -132,11 +128,10 @@ const problems: Record<string, string> = {
 
 
 import "@xterm/xterm/css/xterm.css"
-import { endpointSymbol } from "vite-plugin-comlink/symbol";
-import { toast } from "solid-sonner";
 import { Navigate, useNavigate, useParams } from "~/router";
 import Loading from "~/components/loading.svg";
 import { Separator } from "~/components/ui/separator";
+import { proxy } from "vite-plugin-comlink/symbol";
 
 // console.log(await py.run("1+1"))
 function Console(_props: { hide?: boolean, terminal?: Terminal } & JSX.HTMLAttributes<HTMLDivElement>) {
@@ -215,7 +210,7 @@ export default function Login() {
   onMount(async () => {
     term.writeln("파이썬을 로드하고 있습니다...")
     const i = setInterval(() => {
-      py.run("print('Loaded!')", Comlink.proxy((b) => {
+      py.run("print('Loaded!')", proxy((b) => {
         setIsDisabled(false);
         clearInterval(i);
         term.clear();
