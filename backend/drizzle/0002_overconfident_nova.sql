@@ -1,0 +1,1 @@
+ALTER TABLE "students" ADD COLUMN "createdAt" time DEFAULT now() NOT NULL;

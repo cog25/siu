@@ -1,0 +1,14 @@
+#!/usr/bin/env -S deno run --allow-env
+
+import { Buffer } from "node:buffer";
+
+console.log(
+  "Basic",
+  Buffer.from(
+    JSON.stringify({
+      id: parseInt(prompt("학번? ")!),
+      name: prompt("이름? "),
+      type: "student"
+    })
+  ).toString("base64")
+)

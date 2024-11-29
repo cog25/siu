@@ -1,0 +1,4 @@
+[tools]
+pnpm = "latest"
+deno = "latest"
+node = "latest"

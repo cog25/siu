@@ -1,0 +1,7 @@
+{
+    "workspace": [
+        "frontend",
+        "backend"
+    ],
+    "nodeModulesDir": "manual"
+}

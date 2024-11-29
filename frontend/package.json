@@ -1,0 +1,47 @@
+{
+  "name": "@siu/frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@corvu/otp-field": "^0.1.4",
+    "@corvu/resizable": "^0.2.3",
+    "@generouted/solid-router": "^1.19.9",
+    "@kobalte/core": "^0.13.7",
+    "@siu/backend": "workspace:*",
+    "@solidjs/router": "^0.15.1",
+    "@trpc/client": "^11.0.0-rc.648",
+    "@unocss/reset": "^0.64.1",
+    "@uwu/monaco-solid": "^1.4.0",
+    "@xterm/addon-fit": "^0.10.0",
+    "@xterm/xterm": "^5.5.0",
+    "ansi-colors": "^4.1.3",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "comlink": "^4.4.2",
+    "es-toolkit": "^1.27.0",
+    "monaco-editor": "^0.52.0",
+    "pyodide": "^0.26.4",
+    "solid-js": "^1.9.3",
+    "solid-markdown": "^2.0.12",
+    "solid-sonner": "^0.2.8",
+    "superjson": "^2.2.1",
+    "tailwind-merge": "^2.5.5",
+    "ts-dedent": "^2.2.0",
+    "unocss-preset-animations": "^1.1.0",
+    "vite-plugin-comlink": "^5.1.0"
+  },
+  "devDependencies": {
+    "@solid-devtools/overlay": "^0.30.1",
+    "@types/node": "^22.9.3",
+    "typescript": "~5.6.2",
+    "unocss": "^0.64.1",
+    "vite": "^5.4.10",
+    "vite-plugin-solid": "^2.10.2"
+  }
+}

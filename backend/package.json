@@ -1,0 +1,24 @@
+{
+  "name": "@siu/backend",
+  "version": "0.0.1",
+  "dependencies": {
+    "@electric-sql/pglite": "^0.2.13",
+    "@trpc/server": "^11.0.0-rc.638",
+    "drizzle-orm": "^0.36.3",
+    "es-toolkit": "^1.27.0",
+    "superjson": "^2.2.1",
+    "trpc-ui": "^1.0.3",
+    "ts-dedent": "^2.2.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.13",
+    "drizzle-kit": "^0.28.1"
+  },
+  "scripts": {
+    "dev": "deno run -A --watch src/index.ts",
+    "db:gen": "drizzle-kit generate",
+    "db": "drizzle-kit",
+    "compile": "deno compile --include drizzle/ --node-modules-dir --output app  ./src/index.ts"
+  }
+}

@@ -1,0 +1,1 @@
+ALTER TABLE "students" RENAME COLUMN "pcName" TO "ip";

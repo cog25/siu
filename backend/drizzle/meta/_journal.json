@@ -1,0 +1,48 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1732200575313,
+      "tag": "0000_vengeful_terror",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1732201236805,
+      "tag": "0001_brief_spot",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1732234352946,
+      "tag": "0002_overconfident_nova",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1732236639434,
+      "tag": "0003_outstanding_terrax",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1732240747009,
+      "tag": "0004_sturdy_wildside",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1732838447946,
+      "tag": "0005_whole_matthew_murdock",
+      "breakpoints": true
+    }
+  ]
+}
